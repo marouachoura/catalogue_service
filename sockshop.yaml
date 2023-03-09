@@ -150,7 +150,7 @@ spec:
       containers:
       - name: catalogue
         image: maroua20/microservicecatalogue:v2 #weaveworksdemos/catalogue:0.3.5
-        command: ["/catalogue"]
+        command: ["/app"]
         args:
         - -port=80
         resources:
@@ -198,8 +198,8 @@ metadata:
 spec:
   ports:
     # the port that this service should serve on
-  - port: 80
-    targetPort: 80
+  - port: 8080
+    targetPort: 8080
   selector:
     name: catalogue
 ---
