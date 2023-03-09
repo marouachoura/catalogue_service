@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY cmd/cataloguesvc/app .
-
+RUN chmod -R 777 /app
 # Build the Go application
 #RUN go build -o catalogue
 #RUN chmod +x ./catalogue
