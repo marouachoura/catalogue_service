@@ -14,4 +14,5 @@ RUN chmod -R 777 /app
 EXPOSE 8080
 
 # Define the command to run the Go application
-CMD ["./app"]
+#CMD ["./app"]
+ENTRYPOINT ["/app/app"]
