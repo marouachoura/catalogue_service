@@ -149,7 +149,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: maroua20/microservicecatalogue:v5 #weaveworksdemos/catalogue:0.3.5
+        image: maroua20/catalogue:v5 #weaveworksdemos/catalogue:0.3.5
         command: ["/app"]
         args:
         - -port=8080
